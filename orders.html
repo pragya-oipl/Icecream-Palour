@@ -2,6 +2,10 @@
 <html>
 <head>
 	<title>order</title>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	
+	
 	<style type="text/css">
 		 #main2{
 			background:#DDA0DD;
@@ -28,7 +32,40 @@
 		ul li a:hover{
 			background: pink;
 		}
-		
+
+		#m1{
+			/*border: 2px solid red;*/
+			height: 400px;
+			width: 100%;
+		}
+		#kk{
+            transform: translate(400px,90px);
+            /*border: 2px solid red;*/
+            width: 60%;
+          }  
+        #k{
+          	/*border: 2px solid red;*/
+          }
+
+
+
+         .button:hover{
+         	 color: yellow;
+         	 background: #9E4784;
+         }
+
+		#myDiv{
+			/*border: 2px solid red;*/
+		 height: 300px;
+		  width: 50%;
+		   transform: translate(100px,-460px);
+		    background: #EDE9D5;
+		    border-radius: 20px;
+		}
+
+		.b2:hover{
+				background: #539165;
+		}
 
 
 
@@ -44,7 +81,103 @@
       			<li> <a href="contact.html">CONTACT US</a></li>
 
       		</ul>
+
+      		<div style="height: 200px; width: 100%; margin-bottom: 20px;">
+      			<a href="contact.html"><i class="fa fa-user" style="font-size: 60px; transform: translate(1009px,0px); color: black;"></i></a>
+      				<a href="ppp.html"><i class="fa fa-cart-plus" style="font-size:60px; transform: translate(1100px,0px); color: black;"></i></a>
+      			<a href="index.html"><i class="fa fa-home" style="font-size: 60px; transform: translate(1170px,0px); color: black;"></i></a>
+
+      			<i class="fa fa-search" style="font-size: 60px; transform: translate(-120px,50px);"></i>
+      			<div style="height:2px;width: 50%; transform: translate(40px,60px); background: black; "><input type="text" name="" placeholder="Search"style="transform: translate(100px,-40px);border: none;font-size: 30px;"></div>
+      		</div>
+
+      		<div id="m1"><img src="n3.jpg" style="width: 100%;"><div style="transform: translate(300px,-400px); font-size: 40px; width: 60%;"><b>FUTURE FORWARD</b> <br> <br>
+
+      		We’re pioneering new relationships with our food </div>
+
+
+
       	</div>
+
+
+
+      		<div style= "height: 900px; width: 100%; margin-top: 260px;">
+      			<img src="nw.jpg" style="width:100%;opacity: 60%;">
+      			<p style="transform: translate(100px,-870px); width: 60%; font-size: 40px;"> <b>Vegan Certified</b> <br>
+
+          We take pride in our ingredients and formulas being vegan certified <br> by vegan.org methods. This brings us closer to our mission in helping our bodies and earth’s needs.</p>
+
+
+          <p style="transform: translate(600px,-700px); width: 50%; font-size: 40px;"> <b>Inspiring Imagination</b> <br>
+           Step one to rebuilding our relationship with food takes having a fearless imagination <br>and ditching the controlling fad diets and bizarre concepts nutrition. </p>
+
+      		</div>
+
+
+      		<div style="height: 400px; width: 100%;"><img src="n2.jpg" style="width: 100%;">
+      			<p style="transform: translate(60px,-700px);width: 50%; font-size: 40px; font-family: Segoe Script;"><b>SPREAD HAPPINESS</b> <br> <br>
+           WITH A GIFT CARD FROM UNICONE <br>
+                Give the gift of Unicone! Gift cards can be purchased and redeemed at participating Unicone locations.</p>
+                <p style="transform: translate(500px,-1400px); font-size: 40px;v font-family: Lucida Handwriting; width: 60%;"><B>GRAB YOUR FLOVOUR NOW</B></p>
+
+
+      		</div>
+
+      		<div style=" height: 400px; width: 100%; margin-top: 500px; background: #8E7618;">
+      			 <ul id="k">
+          <li>Privacy</li>
+          <li>Accessibility <br> Statement</li>
+          <li>Sitemap</li>
+          <li>Terms$<br>Conditions</li>
+          <li>Contact us</li>
+
+         </ul>
+         <p id="kk">2021 Dreyer’s Grand Ice Cream, Inc. and its licensors. All rights reserved.</p>
+         <i class="fa fa-instagram" style="font-size: 50px;transform: translate(400px,-30px); "></i>
+
+                <i class="fa fa-twitter" style="font-size: 50px;transform: translate(500px,-30px);"></i>
+                <i class="fa fa-facebook" style="font-size: 50px;transform: translate(600px,-30px);"></i>
+                <i class="fa fa-phone" style="font-size: 50px;transform: translate(700px,-30px);"></i>
+
+      			
+
+
+      		</div>
+      		<button  onclick="myFunction()"style="font-size: 50px;transform: translate(800px,-500px);border-radius: 20px; height: 74px; font-family: MV Boli;" class="button">ORDER NOW</button>
+
+
+      		<div id="myDiv">
+      			<h1 style="margin-left: 20px; padding: 20px;"><B>ENTER YOUR DELIVERY ADDRESS</B></h1>
+      			
+      			<input type="text" name="" placeholder="Address" style="height: 50px; width: 70%; margin-left: 20px; border-radius: 20px; font-size: 30px;">
+      			<i class="fa fa-location-dot" style="font-size: 50px;"></i>
+      			<a href="orders.html"><button style="height: 60px; width: 20%; font-size: 30px; border-radius: 20px;transform: translate(10px,100px); color: red; box-shadow: 0px 5px;" class="b2">continue</button></a>
+      		</div>
+
+
+
+
+
+
+
+      	</div>
+
+      	<script>
+      			function myFunction() {
+      				var x = document.getElementById("myDiv");
+  				if (x.style.display === "none") {
+                    x.style.display = "block";
+              } else {
+                   x.style.display = "none";
+                  }
+              }
+
+
+
+
+      		</script>
+
+
 
       	
 
