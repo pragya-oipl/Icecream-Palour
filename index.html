@@ -3,13 +3,15 @@
 <head>
 	<title>Homepage</title>
 	<style type="text/css">
+
+
 		
 
 		
 		
 		#main1{
 			/*background: #FFB6C1;*/
-			border: 2px ;
+			/*border: 2px solid red;*/
 			height : 900px ;
 			width:  100% ;
 
@@ -109,6 +111,7 @@
           	   width: 100%;
           	   height: 500px;
           	   margin-top: 70px;
+          	   /*border: 2px solid red;*/
            }
 
               
@@ -166,8 +169,100 @@
        	        color: maroon;
                 /*border: 2px solid black;*/
        }
-		*/
-       	
+		#kk{
+            /*transform: translate(0px,50px);*/
+            /*border: 2px solid red;*/
+            width: 60%;
+
+          }  
+        #k{
+          	/*border: 2px solid red;*/
+          }
+
+          .ani{
+
+          	clip-path: polygon(
+    0% 0%,
+    100% 10%,
+    100% 76%,
+    75% 75%,
+    75% 100%,
+    0% 75%,
+    0% 70%
+  );
+  animation: clipOut 4s infinite;
+         
+          }
+
+          @keyframes clipOut {
+  from {
+    clip-path: polygon(50% 50%, 50% 50%, 50% 50%, 50% 50%, 50% 50%, 50% 50%, 50% 50%);
+  }
+}
+       	.ar{
+       		clip-path: polygon(
+    0% 0%,
+    100% 10%,
+    100% 76%,
+    75% 75%,
+    75% 100%,
+    0% 75%,
+    0% 70%
+  );
+  animation: clipOut 4s infinite;
+         
+          }
+       	}
+
+          @keyframes clipOut {
+  from {
+    clip-path: polygon(50% 50%, 50% 50%, 50% 50%, 50% 50%, 50% 50%, 50% 50%, 50% 50%);
+  }
+}
+
+	.tech-slideshow{
+				margin: 0 auto;
+				position: relative;
+				overflow: hidden;
+				height: 450px;
+				width: 100%;
+				/*border: 2px solid red;*/
+				transform: translate3d(0, 0, 0);
+	}
+
+	.tech-slideshow > div {
+				height: 200px;
+				width: 2526px;
+				background: url(https://imgv3.fotor.com/images/blog-richtext-image/combination-of-cute-lock-screen-wallpapers.jpg);
+				position: absolute;
+				top: 0;
+				left: 0;
+				height: 100%;
+				transform: translate3d(0, 0, 0);
+	}
+
+		.tech-slideshow .mover-1 {
+            animation: moveSlideshow 12s linear infinite;
+ }
+
+ 			.tech-slideshow .mover-2 {
+              opacity: 0;
+            transition: opacity 0.5s ease-out;
+           background-position: 0 -200px;
+           animation: moveSlideshow 15s linear infinite;
+}
+
+
+			.tech-slideshow:hover .mover-2 {
+                                 opacity: 1;
+          }
+
+
+			@keyframes moveSlideshow {
+  100% { 
+    transform: translateX(-66.6666%);  
+  }
+}
 
 
 
@@ -225,33 +320,71 @@
 
         </div>
 
+        <div id="best" style="height: 2000px; ">
+
         <div><img src="na.jpg" style="transform: translate(0px,-450px);"></div>
 
         <div><img src="na2.jpg" style="float: right; transform: translate(-70px,-500px);"></div>
         <div><p style="font-size: 70px; transform: translate(80px,-450px); width: 50%; font-family: Segoe Script;">Crafted with the <br> Alpine Spirit</p></div>
 
-        <div><img src="art.jpg" style="transform: translate(0px,-400px); width: 50%; height: 700px;"></div>
+        <div><img src="art.jpg" class="ar" style="transform: translate(0px,-400px); width: 50%;  height: 700px;"></div>
 
-        <div><p style="font-size: 40px; transform: translate(10px,-100px); width: 50%;">Count Blessings <br> Not Calories</p></div>
+        <div><p style="font-size: 150px; font-family: Brush Script MT; transform: translate(800px,-1200px); width: 30%; ">Count Blessings <br> Not Calories</p></div>
 
 
-         <!-- <div id="new" style="border: 2px solid red; height: 300px; width:99%; margin-top: 140px; margin-left: 5px;"></div> -->
-
+        
 
                   
            	
 
 
+        	 <div  style=" height: 700px; width: 100%; transform: translate(0px,-1300px);"><img src="nt.jpg" style="float: right; height: 700px;  width: 60%" class="ani">
+
+
+        	 	 <div style="font-size: 130px;  padding: 60px; font-family: Brush Script MT;">All it take is... <br> one bite to get hooked</div>
+                 </div>
+
+                 </div>
+
+               
+
+          <div style=" height: 600px; width: 100%;  background: #8E7618; transform: translate(0px,500px); ">
+      	  <ul id="k">
+          <li>Privacy</li>
+          <li>Accessibility <br> Statement</li>
+          <li>Sitemap</li>
+          <li>Terms$<br>Conditions</li>
+          <li>Contact us</li>
+
+         </ul>
+         <p id="kk" style="margin-left: 380px; padding: 60px;">2021 Dreyer’s Grand Ice Cream, Inc. and its licensors. All rights reserved.</p>
+         <i class="fa fa-instagram" style="font-size: 50px;transform: translate(400px,30px); "></i>
+
+                <i class="fa fa-twitter" style="font-size: 50px;transform: translate(500px,30px);"></i>
+                <i class="fa fa-facebook" style="font-size: 50px;transform: translate(600px,30px);"></i>
+                <i class="fa fa-phone" style="font-size: 50px;transform: translate(700px,30px);"></i>
+           </div>
+
+           <div style=" background: black; height: 10px; width: 100%; margin-top: 120px;"></div>
+
+           <div style=" background: black; height: 10px; width: 100%; margin-top: 450px;"></div>
+
+            <div class="tech-slideshow" style="  transform: translate(0px,-1200px);"><img src="q.jpg" style="width: 50%; float: right;">
+
+            	<div class="mover-1"></div>
+                <div class="mover-2"></div>
 
 
 
-
-      
-
+            </div>
 
 
+       
 
-      </div>
+       </div>
+
+
+
 
       
 
