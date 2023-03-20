@@ -39,10 +39,11 @@
 
 		#div1{
 
-			   /*border: 2px solid black;*/
-			   height: 600px;
+			   border: 2px solid black;
+			   height: 1000px;
 			   width: 100%;
 			   /*background: #F9DBBB;*/
+			   margin-bottom: 10px;
 		}
 
 
@@ -78,9 +79,34 @@
 
           #kk{
             transform: translate(400px,70px);
-          }  
+          }
 
-        
+          .lineUp{
+
+          	animation: 2s anim-lineUp ease-out infinite;
+}
+@keyframes anim-lineUp {
+  0% {
+    opacity: 0;
+    transform: translateY(80%);
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+
+          
+
+          
     </style>
 
 
@@ -100,31 +126,40 @@
       		<a href="index.html">
                <i class="fa fa-home" style=" font-size: 40px; transform: translate(1230px,-40px);"></i>
             </a>
+
+
           
 
       		 
 
       		<div id="div1">
-      			<img src="ca3.jpg" style="margin-left: 10px; margin-top: 30px; border-radius: 50px;">
-      			<p style="transform: translate(100px,-300px); font-family: Segoe Script; width: 50%; font-size: 50px;">HEY PEOPLE!</p>
-      			<p style="transform: translate(190px,-350px); font-family: Segoe Script; width: 50%; font-size: 50px">Lets Bake....</p>
+      			<img src="back.jpg" style="height: 1000px; width: 100%;">
+      			<div style="background: pink; height: 200px; width: 60%; transform: translate(270px,-1030px); border-radius: 0px 0px 40px 40px;"><p class="lineUp" style="font-size: 50px; font-family: Brush Script MT; margin-left: 10px;">we just want to serve good things to good people <br> and have a great time doing it.</p></div>
 
-      			<div style="height: 400px; width: 40%; transform: translate(750px,-670px); font-size: 80px;"><p style="margin-left: 100px; font-family: Brush Script MT;">Enjoy Life <br> and <br> Eat Cake</p></div>
+      			<div style="transform: translate(150px,-900px); height: 600px; width: 80%; background: pink;">
+      				
+      				<div style=" height: 250px; width: 30%; transform: translate(20px,10px);"> <img src="ck10.jpg" style="height: 245px; width:100%;" class="w3-hover-sepia"></div>
+      				<div style="background: red; height: 250px; width: 30%; transform: translate(376px,-238px);"> <img src="ck2.jpg" style="height: 250px; width: 100%;" class="w3-hover-sepia"></div>
+      				<div style="background: red; height: 250px; width: 30%; transform: translate(20px,-180px);"><img src="ck9.jpg" style="height: 250px; width: 100%;" class="w3-hover-sepia"></div>
+      				<div style="background: red; height: 250px; width: 30%; transform: translate(376px,-430px);"><img src="ck8.jpg" style="height: 250px; width: 100%;" class="w3-hover-sepia"></div>
+      				<div style="background: red; height: 250px; width: 30%; transform: translate(730px,-987px);"><img src="ck7.jpg" style="height: 250px; width: 100%;" class="w3-hover-sepia"></div>
+      				<div style="background: red; height: 250px; width: 30%; transform: translate(728px,-930px);"><img src="ck3.jpg" style="height: 250px; width: 100%;" class="w3-hover-sepia"></div>
 
 
 
-      		</div>
-      		<div style="height: 400px; width: 100%; transform: translate(0px,-140px);"><img src="k1.jpg" style="height: 400px; width: 70%; transform: translate(370px,0px); border-radius: 10px;">
-      			<p style="color: red;transform: translate(570px,-300px); font-size: 60px; font-family: Gabriola;">Make everyday sweet with us</p>
+      			</div>
+
+      			</div>
 
 
-      		</div>
+
+      		
       		<div style="text-align: center; font-size: 50px; font-family:Lucida Handwriting;margin-bottom: 40px;" >OUR FLAVOURS</div>
 
 
 
 
-      		<div style="border: 2px solid red; height: 400px; width: 100%; background: #FF5F9E;">
+      		<div style=" height: 400px; width: 100%; background: #FF5F9E;">
       			
       			<div class="w3-container" id="m1">
       				

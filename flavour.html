@@ -44,6 +44,7 @@
 				width: 300px;
 				margin-left: 10px;
 				margin-top: 5px;
+        transform: translate(800px,0px);
 
 		}
 
@@ -57,6 +58,7 @@
 			width: 100%;
 			/*border: 2px solid black;*/
 			background:peachpuff;
+      transform: translate(0px,-10px);
 		}
 
 		#d2{
@@ -65,6 +67,7 @@
 			/*border: 2px solid black;*/
 			font-size: 50px;
 			transform: translate(320px,-830px);
+
       cursor: pointer;
 
 		}
@@ -80,7 +83,7 @@
 
     #d3{
             /*border: 2px solid black;*/
-            height: 500px;
+            height: 540px;
             width: 100%;
             margin-top: 20px;
             background: #E96479;
@@ -110,7 +113,7 @@
        .new{
             margin-top: 20px;
           margin-bottom:20px;
-              margin-left:5px; 
+              margin-left:7px; 
           height: 300px;
        }
 
@@ -187,9 +190,68 @@
           }
           #kk{
             transform: translate(400px,70px);
-          }  
+          } 
 
 
+          .sidenav{
+
+                height: 100%;
+                width: 0;
+               position: fixed;
+              z-index: 1;
+               top: 0;
+                   left: 0;
+              background-color: #EDE9D5;
+               overflow-x: hidden;
+                   transition: 0.5s;
+                 padding-top: 60px;
+          } 
+
+
+                .sidenav a {
+                         padding: 8px 8px 8px 32px;
+                            text-decoration: none;
+                               font-size: 25px;
+                             color: #818181;
+                          display: block;
+                             transition: 0.3s;
+           }
+                       .sidenav a:hover {
+                         color: #f1f1f1;
+             }
+
+             .sidenav a {
+                       padding: 8px 8px 8px 32px;
+                    text-decoration: none;
+                       font-size: 25px;
+                  color: #818181;
+                       display: block;
+                      transition: 0.3s;
+             }
+                        .sidenav a:hover {
+                            color: #f1f1f1;
+            }
+
+
+            @media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+                .flavour:hover{
+                            background: #9E4784;
+                            cursor: pointer;
+                }
+
+                .flavour2:hover{
+                                  background: #7DB9B6;
+                                  cursor: pointer;
+                }
+
+                .flavour3:hover{
+                                background: #FDD36A;
+                                cursor: pointer;
+                }
 
 
 
@@ -210,10 +272,52 @@
       		</ul>
 
           <a href="index.html">
-               <i class="fa fa-home" style=" font-size: 40px; transform: translate(1230px,-40px);"></i>
+               <i class="fa fa-home" style=" font-size: 50px; transform: translate(1230px,-40px);"></i>
             </a>
 
+
+           <div id="mySidenav" class="sidenav">
+
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+              <a href="#"><button  style="border-radius: 20px; background: #EB455F">Add To Cart</button></a>
+              <a href="#"><button style="height: 50px; width: 120px; border-radius: 20px; margin-left: 10px; "><i class="fa fa-plus" style="float: left;"></i>
+                <i class="fa fa-minus" style="float: right;"></i>
+
+              </button></a>
+
+              <p style="margin-left: 30px; font-size: 30px;"><b>FLAVOURS</b></p>
+
+              <p style="margin-left: 30px; font-size: 30px; color: #C92C6D;" class="flavour"> Chocolate</p>
+              <p style="margin-left: 30px; font-size: 30px; color: #C92C6D;" class="flavour">Mint</p>
+              <p style="margin-left: 30px; font-size: 30px; color: #C92C6D;" class="flavour">Strawberry</p>
+              <p style="margin-left: 30px; font-size: 30px; color: #C92C6D;" class="flavour">Vanilla</p>
+              <p style="margin-left: 30px; font-size: 30px; color: #C92C6D;"class="flavour">Butterscotch</p>
+
+              <p style="margin-left: 30px; font-size: 30px;"><b>Dryfruits</b></p>
+
+              <p style="margin-left: 30px; font-size: 30px; color:#0F6292;" class="flavour2">Pistachio</p>
+
+              <p style="margin-left: 30px; font-size: 30px; color:#0F6292;"  class="flavour2">Choco nuts</p>
+              <p style="margin-left: 30px; font-size: 30px; color:#0F6292;"  class="flavour2">Fruit nuts</p>
+              <p style="margin-left: 30px; font-size: 30px; color:#0F6292;"  class="flavour2">Blackberry Swirl</p>
+
+              <p style="margin-left: 10px; font-size: 30px;"><b>International</b></p>
+
+              <p style="margin-left: 10px; font-size: 30px;color: #FF8B13;"  class="flavour3">Mango Sorbet</p>
+              <p style="margin-left: 30px; font-size: 30px; color: #FF8B13;"  class="flavour3">Berryfruit</p>
+              <p style="margin-left: 30px; font-size: 30px; color: #FF8B13;"  class="flavour3">Frozen Flake</p>
+
+
+
+           </div>
+
+           <span style="font-size:40px; margin-bottom: 10px; cursor:pointer" onclick="openNav()">&#9776; </span>
+
+
+
       		<div id="d1">
+
 
       		
       		<img src="co3.jpg" id="pict1">
@@ -221,11 +325,11 @@
 
 
       		<div id="d2">
-      		<a href=" contact.html"><div style="transform: translate(10px,70px);font-family: Ink Free;  background: #c3195d;"  class="text">Chocolate <b style="font-size: 20px;">Rs.100</b></div></a>
-      			<a href="contact.html"><div style="transform: translate(10px,150px);font-family: Ink Free; background: #dde0ab;" class="text">Mint <b style="font-size: 20px;">Rs.100</b></div></a>
-      			<a href="contact.html"><div style="transform: translate(10px,250px);font-family: Ink Free; background:#f76b8a;" class="text">Strawberry <b style="font-size: 20px;">Rs.100</b></div></a>
-      			<a href=" contact.html"><div style="transform: translate(10px,350px);font-family: Ink Free; background: #edb1f1;" class="text">Vanilla <b style="font-size: 20px;">Rs.100</b></div></a>
-      			<a href=" contact.html"><div style="transform: translate(10px,430px);font-family: Ink Free;background: #c24d2c;"class="text">Butterscotch <b style="font-size: 20px;">Rs.100</b></div></a>
+      		<a href="orders.html"><div style="transform: translate(10px,70px);font-family: Ink Free;  background: #c3195d;"  class="text">Chocolate <b style="font-size: 20px;">Rs.100</b></div></a>
+      			<a href="orders.html"><div style="transform: translate(10px,150px);font-family: Ink Free; background: #dde0ab;" class="text">Mint <b style="font-size: 20px;">Rs.100</b></div></a>
+      			<a href="orders.html"><div style="transform: translate(10px,250px);font-family: Ink Free; background:#f76b8a;" class="text">Strawberry <b style="font-size: 20px;">Rs.100</b></div></a>
+      			<a href=" orders.html"><div style="transform: translate(10px,350px);font-family: Ink Free; background: #edb1f1;" class="text">Vanilla <b style="font-size: 20px;">Rs.100</b></div></a>
+      			<a href=" orders.html"><div style="transform: translate(10px,430px);font-family: Ink Free;background: #c24d2c;"class="text">Butterscotch <b style="font-size: 20px;">Rs.100</b></div></a>
 
 
       		</div>
@@ -252,7 +356,7 @@
               <p class="para1">Mango Sorbet <br>Rs.200</p></div>
             <div class="w3-card w3-hover-shadow hii"><img src="i5.jpg">
               <p class="para1">Berryfruit <br>Rs.200</p></div>
-            <div class="w3-card w3-hover-shadow hii"><img src="i2.jpg">
+           <div class="w3-card w3-hover-shadow hii"><img src="i2.jpg">
               <p class="para1">Frozen Flake <br>Rs.200</p></div>
 
           </div>
@@ -290,7 +394,15 @@
 
 
       	</div>
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
 
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
       	
 
       	
