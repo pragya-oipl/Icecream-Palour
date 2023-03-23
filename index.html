@@ -81,7 +81,8 @@
          	width: 190px;
           border-radius: 80px;
           /*border: 2px solid black;*/
-          transform: translate(-10px,-100px);
+          transform: translate(-20px,-150px);
+          
          }
 
 
@@ -265,6 +266,38 @@
 }
 
 
+		        @import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+
+		        	.wrapper.four {
+    /*background-color: #9ba5b4;*/
+    font-size: 3rem;
+    font-family: "Play", sans-serif;
+}
+.four .type{
+    padding: 2rem 1rem;
+    width: auto;
+    margin: auto;
+}
+.four h1 {
+    width: 20ch;
+    border-right: 4px solid black;
+    margin: 2rem auto;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 2s steps(13, end), blink-caret 0.5s step-end infinite alternate;
+}
+@-webkit-keyframes typing {
+    from {
+        width: 0;
+    }
+}
+@-webkit-keyframes blink-caret {
+    50% {
+        border-color: transparent;
+    }
+}
+
+
 
 
 
@@ -296,7 +329,7 @@
         <i class="fa fa-home" style="float: right;margin-right: 20px; padding: 10px; font-size: 40px;"
         ></i>
 
-      	<h1 id="pr">WE ARE BRINGING THE <br> FUNLIGHTENMENT TO YOU,<br> ALL SUMMER LONG</h1>
+      	<div class="wrapper four"><div class="type"><h1 class="typing" id="pr">WE ARE BRINGING THE <br> FUNLIGHTENMENT TO YOU,<br> ALL SUMMER LONG</h1></div></div>
 
         <div id = "main">
         	<img src= "logo.jpg" id="t">
