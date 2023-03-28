@@ -2,11 +2,14 @@
 <html>
 <head>
 	<!DOCTYPE html>
+
+
 <html>
 <head>
 	<title>form</title>
 	<link rel="stylesheet" type="text/css" href="https://www.w3schools.com/w3css/4/w3.css">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 	
 
 		<style type="text/css">
@@ -41,15 +44,15 @@
 		 }
 
 		 .form{
-		 	     transform: translate(490px,-400px);
+		 	     transform: translate(590px,-400px);
 		 	     border-radius: 20px;
-		 	     height: 30px;
-		 	     width: 250px;
+		 	     height: 40px;
+		 	     width: 280px;
 		 	     box-shadow:  0 10px;
 		 	     		 }
 
 		 .button{
-		 	      transform: translate(650px,-150px);
+		 	      transform: translate(650px,-140px);
 		 	      border-radius: 30px;
 		 	      height: 40px;
 		 	      width: 110px;
@@ -197,15 +200,22 @@
       		
 			<div id="di">
 				<img src="cr.jpg" style=" width: 60%;">
-				<div><input type="text" name="name" placeholder="Name" class="form"></div><br>
-				<div><input type="text" name="email" placeholder="Email Id" class="form"></div><br>
-				<div><input type="text" name="City" placeholder="City" class="form"></div><br>
-				<div><input type="number" name="num" placeholder="Phone no." class="form"></div><br>
+
+				
+				
+				<div><input type="text" name="name" placeholder="Name" class="form" required></div><br>
+				<div><input type="text" name="email" placeholder="Email Id" class="form" required></div><br>
+				<div><input type="text" name="City" placeholder="City" class="form" required></div><br>
+				<div><input type="number" name="number" placeholder="Phone no." class="form" required></div><br>
+
 
 				
 
 			</div>
-			<button class="button"><b>Confirm</b></button>
+
+			
+			<!-- <button class="button"><b>Confirm</b></button> -->
+			<input type="button" class="button" id="btnShowMsg" value="Confirm" onClick="showMessage()" />
 			
 
 
@@ -275,6 +285,18 @@
 
 	 </div>
 
+
+	 			<script type="text/javascript">
+            function showMessage() {
+                alert("Your order is confirmed");
+            }
+        </script>
+
+      
+
+
+        
+	
 
 
 
