@@ -2,11 +2,14 @@
 <html>
 <head>
 	<!DOCTYPE html>
+
+
 <html>
 <head>
 	<title>form</title>
 	<link rel="stylesheet" type="text/css" href="https://www.w3schools.com/w3css/4/w3.css">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 	
 
 		<style type="text/css">
@@ -35,21 +38,30 @@
 		 }	
 
 		 #di{
-		 	/*border: 2px solid red;*/
+		 	border: 2px solid red;
 		 	height: 600px;
+		 	width: 100%;
+		 	
+		 	margin-top: 20px;
+		 	
+		 	
+
+
 		 	
 		 }
 
-		 .form{
-		 	     transform: translate(550px,-400px);
+		 .forms{
+		 	     transform: translate(520px,-10px);
 		 	     border-radius: 20px;
 		 	     height: 40px;
-		 	     width: 250px;
+		 	     width: 280px;
 		 	     box-shadow:  0 10px;
 		 	     		 }
 
+		 	   
+
 		 .button{
-		 	      transform: translate(650px,-130px);
+		 	      transform: translate(100px,100px);
 		 	      border-radius: 30px;
 		 	      height: 40px;
 		 	      width: 110px;
@@ -66,9 +78,6 @@
 		 	     
 		 }
 
-
- 
-  
 
 		 #know{
                   /*border: 2px solid black;*/
@@ -161,10 +170,57 @@
 				width: 100%;
 		}
 
+		.form2 #name_error,
+		.form2 #phone_error,
+		.form2 #address_error,
+		.form2 #email_error{
+
+
+			color:red;
+			margin-top: 5px;
+			
+			background: rgba(255,0,0,0.1);
+			text-align: center;
+			border: 15px;
+			padding: 5px 8px;
+			border: 2px solid red;
+			width: 40%;
+			display: none;
+
+
+
+		}
+
+		#cont{
+
+			border: 2px solid black;
+			width: 500px;
+			height: 500px;
+			border-radius: 5px;
+			margin-top: 60px;
+			position: relative;
+			margin-left: 450px;
+
+		}
+
+		.form2 {
+			padding: 10px 40px;
+
+
+		}
+
+		.font{
+
+			font-size: 15px;
+			margin: 5px;
+		}
+
+
 		 
         
 
 		</style>
+		
 		
 
 
@@ -199,23 +255,44 @@
 
       		
 			<div id="di">
+				<!-- <img src="cr.jpg" style=" width: 60%;"> -->
+				<div id="cont">
+				<form name="myForm" class="form2" onsubmit="return validated()" method="post">
+					<div class="font">Name</div>
+					<input type="text" name="name">
+					<div id="name_error">Please fill up your name</div>
 
-				<form id="new-form" method="post" >
-				
-				<img src="cr.jpg" style=" width: 60%;">
-				<div><input type="text" name="name" placeholder="Name" required class="form" ></div><br>
-				<div><input type="text" name="email" placeholder="Email Id" required class="form"></div><br>
-				<div><input type="text" name="City" placeholder="City" required class="form" ></div><br>
-				<div><input type="number" name="num" placeholder="Phone no." required  class="form"></div><br>
+
+					<div class="font">Phone N0</div>
+					<input type="text" name="name">
+					<div id="phone_error">Please fill up your name</div>
+
+					<div class="font">Address</div>
+					<input type="text" name="name">
+					<div id="address_error">Please fill up your name</div>
+
+					<div class="font">Email</div>
+					<input type="email" name="name">
+					<div id="email_error">Please fill up your name</div>
+
+
+					<input type="button" name="Confirm" class="button" value="Confirm">
+
+					
 
 				
+				
+				
+
+				</form>
+				</div>
 
 			</div>
-			<button class="button" ><b>Confirm</b></button>
 			
 
-			</form>
-
+			
+			<!-- <button class="button"><b>Confirm</b></button> -->
+			
 			
 
 
@@ -286,12 +363,35 @@
 	 </div>
 
 
+	 			<!-- <script type="text/javascript">
+            function showMessage() {
+                alert("Your order is confirmed");
+            }
+        </script> 
+ -->
 
-	 
-	 
-	 
+        <script>
+        	var name = document.forms['myForm']['name'];
 
 
+
+        	var name_error = document.getElementById('name_error');
+
+
+        	function validated(){
+        		if(name.value.length< 9){
+        			name.style.border = "2px solid red";
+        			name_error.style.display = "block";
+        			name.focus();
+        			return false;
+        		}
+        	}
+
+</script>
+      
+
+
+        
 	
 
 
