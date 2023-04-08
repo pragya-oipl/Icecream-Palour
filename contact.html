@@ -4,6 +4,7 @@
 	<!DOCTYPE html>
 <html>
 <head>
+	<meta charset="utf-8">
 	<title>form</title>
 	<link rel="stylesheet" type="text/css" href="https://www.w3schools.com/w3css/4/w3.css">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -25,31 +26,43 @@
 
 
 
-		 img{
+		 #i{
 		 	height: 600px;
 		 	width: 50%;
-		 	margin-left: 20%;
+		 	margin-left: 25%;
 		 	padding: 20px;
+		 	border-radius: 10%;
+		 	box-shadow: 0 5px 5px;
 
 
 		 }	
 
 		 #di{
 		 	/*border: 2px solid red;*/
-		 	height: 600px;
+		 	height: 650px;
+		 	background: #CFB997;
 		 	
 		 }
 
 		 .form{
-		 	     transform: translate(550px,-400px);
+		 	     transform: translate(530px,-400px);
 		 	     border-radius: 20px;
-		 	     height: 40px;
+		 	     height: 45px;
 		 	     width: 250px;
 		 	     box-shadow:  0 10px;
+		 	     
+
 		 	     		 }
 
+		 	    input:hover{
+
+		 	    		color: black;
+		 	    		cursor: pointer;
+		 	    		box-shadow: 0 0 5px;
+		 	    } 		 
+
 		 .button{
-		 	      transform: translate(650px,-130px);
+		 	      transform: translate(650px,-140px);
 		 	      border-radius: 30px;
 		 	      height: 40px;
 		 	      width: 110px;
@@ -81,7 +94,7 @@
 		 #img1{
 		 	     height: 250px;
 		 	     width: 80%;
-		 	     transform: translate(-150px,20px);
+		 	     transform: translate(140px,20px);
 
 		 	 }
 
@@ -200,18 +213,19 @@
       		
 			<div id="di">
 
-				<form id="new-form" method="post" >
+				<form name="myForm" method="post" onsubmit="return submitClick();">
 				
-				<img src="cr.jpg" style=" width: 60%;">
-				<div><input type="text" name="name" placeholder="Name" required class="form" ></div><br>
-				<div><input type="text" name="email" placeholder="Email Id" required class="form"></div><br>
+				<img src="cr.jpg" style=" width: 45%;" id="i">
+				<div><input type="text" name="user_name" placeholder="Name" required class="form" ></div><br>
+				<div><input type="text" name="user_email" placeholder="Email Id" required class="form"></div><br>
 				<div><input type="text" name="City" placeholder="City" required class="form" ></div><br>
-				<div><input type="number" name="num" placeholder="Phone no." required  class="form"></div><br>
+				<div><input type="number" name="user_phone" placeholder="Phone no." required  class="form"></div><br>
 
 				
 
 			</div>
-			<button class="button" ><b>Confirm</b></button>
+			<!-- <button class="button" ><b>Confirm</b></button> -->
+			<input class="button" type="submit" name="send" value="Confirm" onClick="submitClick( )">
 			
 
 			</form>
@@ -244,8 +258,10 @@
 
                   </div>
 
+                  
+
                   <button style="height: 50px; width: 100px; margin-left: 550px; margin-top: 40px;
-                  border-radius: 20px;box-shadow: 0 10px gray;cursor: pointer;background: pink; font-size: 20px; " class="w3-button w3-hover-blue;">Send</button>
+                  border-radius: 20px;box-shadow: 0 10px gray;cursor: pointer;background: pink; font-size: 20px; " class="w3-button w3-hover-blue;"onclick="alert('Sent 😊')">Send</button>
 
 
                <a href="http://www.instagram.com">  <i class="fa fa-instagram" style="transform: translate(200px,120px); color: black; font-size: 50px;"></i></a> 
@@ -284,6 +300,56 @@
 			</div>
 
 	 </div>
+
+	 <script>
+
+
+	  function submitClick() {
+    if (formValidation()) {
+      alert("Thank you for your time! Your details have been submitted!");
+      return true;
+    } else {
+      return false;
+    }
+  }
+
+  function formValidation() {
+    flag = true;
+
+    if (document.myForm.user_name.value == "") {
+      alert("Please fill in your Name!");
+      flag = false;
+    }
+
+    // Validate letters only as Name
+    if (!/^[a-zA-Z]*$/g.test(document.myForm.user_name.value)) {
+      alert("Enter alphabetic characters as Name!");
+      flag = false;
+    }
+
+    // Validate emails
+    if (!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)* (\.\w{2,3})+$/.test(myForm.user_email.value)) //Regular expressions to validate email
+    {
+      //alert("Enter Valid Email Address!");
+      //flag = false;
+    }
+
+     // Validate Phone number
+    if (document.myForm.user_phone.value == "") {
+      alert("Please fill in your Phone Number!");
+      flag = false;
+    }
+
+    if (!/^[0-9]*$/g.test(myForm.user_phone.value)) {
+      alert("Enter numeric values as Phone Number!");
+      flag = false;
+    }
+    return flag;
+  }
+
+
+
+    </script>
 
 
 
