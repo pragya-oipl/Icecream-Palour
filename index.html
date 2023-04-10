@@ -47,7 +47,7 @@
 		}
 
 		#main2{
-			background:#DDA0DD;
+			background:#159895;
 			border: 2px 
 			width: 200px;
 			height: 80px;
@@ -68,10 +68,10 @@
 		}
 		ul li a{
 			text-decoration: none;
-			color: #9400D3;
+			color: #4F200D;
 		}
 		ul li a:hover{
-			background: pink;
+			background: #EAC7C7;
 			
 
 		}
@@ -85,11 +85,12 @@
          	width: 170px;
          }*/
          #t{
-         	height: 160px;
-         	width: 190px;
-          border-radius: 80px;
+         	height: 180px;
+         	width: 180px;
+          border-radius: 100px;
           /*border: 2px solid black;*/
-          transform: translate(-20px,-150px);
+          transform: translate(-17px,-150px);
+
 
          }
 
@@ -165,13 +166,7 @@
             color: #3A98B9;
        }
 
-       #pa2{
-       	     padding: 25px;
-       	     font-size: 70px;
-       	     font-family: Lucida Handwriting;
-       	     transform: translate( -190px,-90px);
-             /*border: 2px solid black;*/
-       }
+     
        #apple{
        	        font-size: 50px;
        	        transform: translate(320px,-140px);
@@ -179,7 +174,7 @@
                 /*border: 2px solid black;*/
        }
 		#kk{
-            transform: translate(0px,50px);
+            transform: translate(-120px,50px);
             /*border: 2px solid red;*/
             width: 60%;
 
@@ -191,46 +186,10 @@
 
           }
 
-          .ani{
+          
+          
 
-          	clip-path: polygon(
-    0% 0%,
-    100% 10%,
-    100% 76%,
-    75% 75%,
-    75% 100%,
-    0% 75%,
-    0% 70%
-  );
-  animation: clipOut 4s infinite;
-         
-          }
 
-          @keyframes clipOut {
-  from {
-    clip-path: polygon(50% 50%, 50% 50%, 50% 50%, 50% 50%, 50% 50%, 50% 50%, 50% 50%);
-  }
-}
-       	.ar{
-       		clip-path: polygon(
-    0% 0%,
-    100% 10%,
-    100% 76%,
-    75% 75%,
-    75% 100%,
-    0% 75%,
-    0% 70%
-  );
-  animation: clipOut 4s infinite;
-         
-          }
-       	}
-
-          @keyframes clipOut {
-  from {
-    clip-path: polygon(50% 50%, 50% 50%, 50% 50%, 50% 50%, 50% 50%, 50% 50%, 50% 50%);
-  }
-}
 
 	.tech-slideshow{
 				margin: 0 auto;
@@ -308,6 +267,25 @@
     }
 }
 
+#animation{
+                height: 500px;
+                width: 100%;
+                left: 0;
+                position: absolute;
+                background-size: 100% 100%;
+                transform: translate();
+                animation-name: start;
+                animation: slider 20s infinite linear;
+}                   
+
+        @keyframes slider{
+        
+           0%{background-image: url(https://cdn.pixabay.com/photo/2019/01/14/17/25/mango-3932597_960_720.jpg);}
+           25%{background-image: url(https://as2.ftcdn.net/v2/jpg/02/94/31/13/1000_F_294311319_l3B1N8PWSPz7fUvkGcsDpiKdk7RipmIQ.jpg );}
+           75%{background-image: url(https://cdn.pixabay.com/photo/2023/03/12/23/11/ice-cream-7848059__340.jpg );}
+           100%{background-image: url(https://t3.ftcdn.net/jpg/05/64/02/34/240_F_564023464_RaZb95D8yFPt2DnxbsYLQaQQ5BSrUImO.jpg );}
+        }
+
 
 
 
@@ -343,6 +321,8 @@
         <i class="fa fa-home" style="float: right;margin-right: 20px; padding: 10px; font-size: 40px;"
         ></i>
 
+        <div style=" height: 2890px; width: 100%; margin-top: 5px; background: #F7C04A;">
+
       	<div class="wrapper four"><div class="type"><h1 class="typing" id="pr">WE ARE BRINGING THE <br> FUNLIGHTENMENT TO YOU,<br> ALL SUMMER LONG</h1></div></div>
 
         <div id = "main">
@@ -353,31 +333,21 @@
 
            
            
-            <div>
-            	<img src="n1.jpg" id="img1"> 
-            	<!-- <video src="video.mp4"></video> -->
-            </div>
-            <div id="div1" > <p id="pa1">Enjoy your <br>Every bite...
+            <div id="animation">
+            	<!-- <img src="n1.jpg" id="img1"> -->
 
-
-            </p>
-             <p id="pa2">Natures Best Ingredients</p>
-             <!-- <i class="fa fa-apple" id="apple"></i> -->
-              <!-- <div style="border: 2px solid red; height:200px;width:100%;transform: translate(-500px,-40px);"><img src="j.jpg"></div> -->
-                  
-
-        </div>
+            
 
         <div id="best" style="height: 2000px; ">
 
-        <div><img src="na.jpg" style="transform: translate(0px,-450px);"></div>
+        <!-- <div><img src="na.jpg" style="transform: translate(50px,10px); height: 300px; width: 43%;"></div> -->
 
-        <div><img src="na2.jpg" style="float: right; transform: translate(-70px,-500px);"></div>
-        <div><p style="font-size: 70px; transform: translate(80px,-450px); width: 50%; font-family: Segoe Script;">Crafted with the <br> Alpine Spirit</p></div>
+        <div><img src="na2.jpg" style="float: right; transform: translate(-70px,1500px);"></div>
+        <div><p style="font-size: 70px; transform: translate(60px,1600px); width: 50%; font-family: Segoe Script;">Crafted with the <br> Alpine Spirit</p></div>
 
-        <div><img src="art.jpg" class="ar" style="transform: translate(0px,-400px); width: 50%;  height: 700px;"></div>
+        <div><img src="art.jpg" class="ar" style="transform: translate(40px,160px); width: 50%;  height: 500px;"></div>
 
-        <div><p style="font-size: 120px;  font-family: Brush Script MT; transform: translate(750px,-1200px); width: 35%; ">Count Blessings <br> Not Calories</p></div>
+        <div><p style="font-size: 110px;  font-family: Brush Script MT; transform: translate(800px,-400px); width: 35%; ">Count Blessings <br> Not Calories</p></div>
 
 
         
@@ -386,7 +356,7 @@
            	
 
 
-        	 <div  style=" height: 700px;  width: 100%; transform: translate(0px,-1300px);"><img src="nt.jpg" style="float: right; height: 700px;  width: 60%" class="ani">
+        	 <div  style=" height: 700px;  width: 100%; transform: translate(0px,-450px);"><img src="nt.jpg" style="float: right; height: 500px;  width: 50%" class="ani">
 
 
         	 	 <div style="font-size: 110px; padding: 60px; font-family: Brush Script MT;">All it take is... <br> one bite to get hooked</div>
@@ -397,7 +367,7 @@
 
                
 
-          <div style=" height: 600px; width: 100%;  background: #8E7618; transform: translate(0px,500px); ">
+          <div style=" height: 600px; width: 100%;  background: #0E8388; transform: translate(0px,500px); ">
       	  <ul id="k">
           <li>Privacy</li>
           <li>Accessibility <br> Statement</li>
@@ -406,7 +376,7 @@
           <li>Contact us</li>
 
          </ul>
-         <p id="kk" style="margin-left: 380px; padding: 60px;">2021 Dreyer’s Grand Ice Cream, Inc. and its licensors. All rights reserved.</p>
+         <p id="kk" style=" font-size: 25px; margin-left: 380px; padding: 60px;">2021 Unicones's Ice Cream, Inc. and its licensors. All rights reserved.</p>
         <a href="http://www.instagram.com"> <i class="fa fa-instagram" style="font-size: 50px;transform: translate(400px,30px); color: black; "></i></a>
 
               <a href="http://www.twitter.com">  <i class="fa fa-twitter" style=" color : black;font-size: 50px;transform: translate(500px,30px);"></i></a>
@@ -434,6 +404,8 @@
 
 
        </div>
+
+   </div>
 
 
 
