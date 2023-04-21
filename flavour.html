@@ -303,8 +303,8 @@
 
               <p style="margin-left: 30px; font-size: 30px;"><b>FLAVOURS</b></p>
 
-              <p style="margin-left: 30px; font-size: 30px; color: #C92C6D;" class="flavour"> Chocolate</p>
-              <p style="margin-left: 30px; font-size: 30px; color: #C92C6D;" class="flavour">Mint</p>
+              <p style="margin-left: 30px; font-size: 30px; color: #C92C6D;" class="flavour" id="choco" onclick="addtocart()"> Chocolate</p>
+              <p style="margin-left: 30px; font-size: 30px; color: #C92C6D;" class="flavour" id="mint" onclick="addtocart(this.id)">Mint</p>
               <p style="margin-left: 30px; font-size: 30px; color: #C92C6D;" class="flavour">Strawberry</p>
               <p style="margin-left: 30px; font-size: 30px; color: #C92C6D;" class="flavour">Vanilla</p>
               <p style="margin-left: 30px; font-size: 30px; color: #C92C6D;"class="flavour">Butterscotch</p>
@@ -418,12 +418,59 @@ function openNav() {
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }
+
+
+
 </script>
 
  <script type="text/javascript">
             function showMessage() {
                 alert("Item added to cart");
             }
+        </script>
+
+
+
+
+
+
+        <script>
+
+
+
+            function addToCart() {
+            var price = $("#products").val();  // get selected product's price
+            var name = $("#products option:selected").text();  // get product name
+            var qty = $("#qty").val();  // get quantity
+
+            // update Qty if product is already present
+            for (var i in cart) {
+                if(cart[i].Product == name)
+                {
+                    cart[i].Qty = qty;  // replace existing Qty
+                    showCart();
+                    saveCart();
+                    return;
+                }
+            }
+
+            var item = { Product: name,  Price: price, Qty: qty };
+            cart.push(item);
+            saveCart();
+            showCart();
+        }
+
+        function saveCart() {
+            if (window.localStorage)
+            {
+                localStorage.cart = JSON.stringify(cart);
+            }
+        }
+    
+
+
+
+
         </script>
 
   
