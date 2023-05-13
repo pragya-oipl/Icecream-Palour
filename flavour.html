@@ -353,11 +353,11 @@
           </div>
 
         <div class="w3-container" id="d3">
-          <div class="w3-card w3-hover-shadow  hi"><img src="d2.jpg" class="new" style="height: 100%; width: 100%;">
+         <a href="contact.html"><div class="w3-card w3-hover-shadow  hi"><img src="d2.jpg" class="new" style="height: 100%; width: 100%;"></a>
             <p class="p1">pistachio <br>Rs.100</p></div>
-         <div class="w3-card w3-hover-shadow hi"> <img src="d3.jpg" class="new" style=" height: 100%; width: 100%"><p class="p1">choco nuts <br>Rs.100</p></div>
-         <div class="w3-card w3-hover-shadow hi"><img src="d5.jpg" class="new" style=" height: 100%;width: 100%;"> <p class="p1">fruit nuts <br>Rs.100</p></div>
-         <div class="w3-card w3-hover-shadow hi"><img src="d7.jpg" class="new" style="height: 100%; width: 100%;"><p class="p1">blackberry swirl <br>Rs.100</p></div>
+        <a href="contact.html"> <div class="w3-card w3-hover-shadow hi"> <img src="d3.jpg" class="new" style=" height: 100%; width: 100%"></a><p class="p1">choco nuts <br>Rs.100</p></div>
+        <a href="contact.html"><div class="w3-card w3-hover-shadow hi"><img src="d5.jpg" class="new" style=" height: 100%;width: 100%;"></a> <p class="p1">fruit nuts <br>Rs.100</p></div>
+        <a href="contact.html">.<div class="w3-card w3-hover-shadow hi"><img src="d7.jpg" class="new" style="height: 100%; width: 100%;"></a><p class="p1">blackberry swirl <br>Rs.100</p></div>
           
 
 
@@ -368,11 +368,11 @@
         <div id="d5">
           <h1 style="text-align:center; font-size:60px; font-family: Brush Script MT;">International</h1>
           <div class="w3-container" id="d6">
-            <div class="w3-card w3-hover-shadow hii" ><img src="d.jpg">
+            <a href="contact.html"><div class="w3-card w3-hover-shadow hii" ><img src="d.jpg"></a>
               <p class="para1">Mango Sorbet <br>Rs.200</p></div>
-            <div class="w3-card w3-hover-shadow hii"><img src="i5.jpg">
+           <a href="contact.html"> <div class="w3-card w3-hover-shadow hii"><img src="i5.jpg"></a>
               <p class="para1">Berryfruit <br>Rs.200</p></div>
-           <div class="w3-card w3-hover-shadow hii"><img src="i2.jpg">
+          <a href="contact.html"><div class="w3-card w3-hover-shadow hii"><img src="i2.jpg"></a>
               <p class="para1">Frozen Flake <br>Rs.200</p></div>
 
           </div>
@@ -434,46 +434,6 @@ function closeNav() {
 
 
 
-        <script>
-
-
-
-            function addToCart() {
-            var price = $("#products").val();  // get selected product's price
-            var name = $("#products option:selected").text();  // get product name
-            var qty = $("#qty").val();  // get quantity
-
-            // update Qty if product is already present
-            for (var i in cart) {
-                if(cart[i].Product == name)
-                {
-                    cart[i].Qty = qty;  // replace existing Qty
-                    showCart();
-                    saveCart();
-                    return;
-                }
-            }
-
-            var item = { Product: name,  Price: price, Qty: qty };
-            cart.push(item);
-            saveCart();
-            showCart();
-        }
-
-        function saveCart() {
-            if (window.localStorage)
-            {
-                localStorage.cart = JSON.stringify(cart);
-            }
-        }
-    
-
-
-
-
-        </script>
-
-  
       	
 
       	
